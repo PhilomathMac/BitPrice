@@ -91,6 +91,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j4l-Xf-ZGn" secondAttribute="trailing" constant="10" id="wD6-kE-5GN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="amountLabel" destination="g0v-PT-st8" id="k6I-f1-0VO"/>
+                        <outlet property="currencyPicker" destination="du2-uN-foC" id="2Xi-01-Q4q"/>
+                        <outlet property="unitLabel" destination="J8V-ar-fAT" id="erL-bu-YIN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,7 +105,7 @@
     <resources>
         <image name="bitcoinsign.square.fill" catalog="system" width="128" height="114"/>
         <namedColor name="backgroundColor">
-            <color red="0.98039215686274506" green="0.8901960784313725" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98000001907348633" green="0.88999998569488525" blue="0.51399999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="iconColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
