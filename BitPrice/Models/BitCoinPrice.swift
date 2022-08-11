@@ -12,11 +12,4 @@ struct BitCoinPrice: Codable {
     let assetIdBase: String
     let assetIdQuote: String
     let rate: Double
-    
-//    enum CodingKeys: String, CodingKeys {
-//        case time = time
-//        case unitFrom = "asset_id_base"
-//        case unitTo = "asset_id_quote"
-//        case rate = rate
-//    }
 }
