@@ -19,6 +19,7 @@ iOS app that displays the current worth of a bitcoin in different world currenci
 * MVC Pattern
 
 ## Future Features / Fixes
+* Show a graph of historical data for that currency conversion
 * Round the corners on dataView in light mode
 * Format large numbers to be more readable
 * Include symbols for each currency
