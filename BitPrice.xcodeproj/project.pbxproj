@@ -14,6 +14,8 @@
 		BBA8507428A44588001A2BCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA8507328A44588001A2BCF /* Assets.xcassets */; };
 		BBA8507728A44588001A2BCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA8507528A44588001A2BCF /* LaunchScreen.storyboard */; };
 		BBA8508228A48C36001A2BCF /* PriceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA8508128A48C36001A2BCF /* PriceManager.swift */; };
+		BBA8508428A48D9E001A2BCF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA8508328A48D9E001A2BCF /* Constants.swift */; };
+		BBA8508628A493A9001A2BCF /* BitCoinPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA8508528A493A9001A2BCF /* BitCoinPrice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BBA8507628A44588001A2BCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBA8507828A44588001A2BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBA8508128A48C36001A2BCF /* PriceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceManager.swift; sourceTree = "<group>"; };
+		BBA8508328A48D9E001A2BCF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BBA8508528A493A9001A2BCF /* BitCoinPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinPrice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,9 @@
 		BBA8507F28A48BE5001A2BCF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BBA8508328A48D9E001A2BCF /* Constants.swift */,
 				BBA8508128A48C36001A2BCF /* PriceManager.swift */,
+				BBA8508528A493A9001A2BCF /* BitCoinPrice.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,9 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA8508428A48D9E001A2BCF /* Constants.swift in Sources */,
 				BBA8506F28A44587001A2BCF /* ViewController.swift in Sources */,
 				BBA8506B28A44587001A2BCF /* AppDelegate.swift in Sources */,
 				BBA8506D28A44587001A2BCF /* SceneDelegate.swift in Sources */,
+				BBA8508628A493A9001A2BCF /* BitCoinPrice.swift in Sources */,
 				BBA8508228A48C36001A2BCF /* PriceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
