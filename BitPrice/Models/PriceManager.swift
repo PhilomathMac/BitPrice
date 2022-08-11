@@ -7,7 +7,16 @@
 
 import Foundation
 
+protocol PriceManagerDelegate {
+    func didUpdatePrice(_ priceManager: PriceManager, coinData: BitCoinPrice)
+    
+    func didFailWithError(_ error: Error)
+}
+
 struct PriceManager {
+    
+    var delegate: PriceManagerDelegate?
+    
     let baseURL = "https://rest.coinapi.io/v1/exchangerate/BTC/"
     
     let currencyArray = ["AUD", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
@@ -27,7 +36,7 @@ struct PriceManager {
             let task = session.dataTask(with: url) { data, response, error in
                 
                 if error != nil {
-                    print(error!.localizedDescription)
+                    delegate?.didFailWithError(error!)
                     return
                 }
                 
@@ -35,8 +44,7 @@ struct PriceManager {
                     
                     if let coinData = self.parseJSON(safeData) {
                         
-                        print("JSON parsed successfully")
-                        print(coinData.rate)
+                        delegate?.didUpdatePrice(self, coinData: coinData)
                     }
                     
                 }
@@ -50,6 +58,7 @@ struct PriceManager {
     func parseJSON(_ coinData: Data) -> BitCoinPrice? {
         
         let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
         
         do {
             
@@ -57,14 +66,14 @@ struct PriceManager {
             
             let time = decodedData.time
             let rate = decodedData.rate
-            let fromUnit = decodedData.asset_id_base
-            let toUnit = decodedData.asset_id_quote
+            let fromUnit = decodedData.assetIdBase
+            let toUnit = decodedData.assetIdQuote
             
-            return BitCoinPrice(time: time, asset_id_base: fromUnit, asset_id_quote: toUnit, rate: rate)
+            return BitCoinPrice(time: time, assetIdBase: fromUnit, assetIdQuote: toUnit, rate: rate)
             
         }
         catch {
-            print("Error parsing JSON")
+            delegate?.didFailWithError(error)
             return nil
         }
         
