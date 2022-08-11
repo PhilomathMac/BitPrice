@@ -1,42 +1,41 @@
 # BitPrice
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/93546810/183757669-4a79b2a2-8b02-4907-8097-7c0b1025f426.png" alt="weatherly screenshot" width="200"/>
-</p>
+<img src="https://user-images.githubusercontent.com/93546810/184053623-98719f14-46d2-4559-b985-01fc6a4e8d00.png" alt="BitPrice Icon" width="200"/>
+
 
 ## Description
-iOS app that displays current bitcoin prices in different world currencies
+iOS app that displays the current worth of a bitcoin in different world currencies
 
 ## Skills Practiced
 
-* UI Layout
 * Autolayout and constraints
 * Dark Mode
 * Protocol/Delegate Pattern
-* Closures/Completion Handlers
 * Use APIs
 * HTTP Requests
 * JSON Encoding/Decoding
 * Grand Central Dispatch
 * Organizing Code via Extensions
 * MVC Pattern
-* Code Snippets
-* Core Location
 
 ## Future Features / Fixes
-* ?
+* Round the corners on dataView in light mode
+* Format large numbers to be more readable
+* Include symbols for each currency
 
 ## Use Instructions
 
 This app involves using an external API. To use the app, clone the project and add your own API key.
 
-1. Create an account with [OpenWeather](https://openweathermap.org)
+1. Create an account with [CoinAPI](https://www.coinapi.io)
 2. Copy your own API key
 3. In the app project, create a Constants struct.
-4. Store your API key in a type property of the Constants struct titled OpenWeatherAPIKey.
+4. Store your API key in a type property of the Constants struct titled apiKey.
 
 ```swift
-//?
+struct Constants {
+  static let apiKey = "Insert your API key here"
+}
 
 ```
 
