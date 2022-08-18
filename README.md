@@ -1,6 +1,6 @@
 # BitPrice
 
-<img src="https://user-images.githubusercontent.com/93546810/184053623-98719f14-46d2-4559-b985-01fc6a4e8d00.png" alt="BitPrice Icon" width="200"/>
+<img src="https://github.com/PhilomathMac/BitPrice/blob/main/PortfolioImage.png?raw=true" alt="BitPrice Icon" width="200"/>
 
 
 ## Description
