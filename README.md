@@ -1,7 +1,7 @@
 # BitPrice
-
-<img src="https://github.com/PhilomathMac/BitPrice/blob/main/PortfolioImage.png?raw=true" alt="BitPrice Icon" width="200"/>
-
+<p align="center">
+  <img src="https://github.com/PhilomathMac/BitPrice/blob/main/PortfolioImage.png?raw=true" alt="BitPrice Icon" width="200"/>
+</p>
 
 ## Description
 iOS app that displays the current worth of a bitcoin in different world currencies
